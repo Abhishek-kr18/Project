@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="css\calculator.css">
+  <link rel="stylesheet" href="calculator.css">
     <title>Calculator</title>
 </head>
 <body>
@@ -38,7 +38,7 @@
 
     <button class="button" onclick ="currentDisplay= currentDisplay + '/' ; document.querySelector('#display').value=currentDisplay;">/</button>
 
-    <button class="button" onclick ="currentDisplay= currentDisplay + '=' ; document.querySelector('#display').value=currentDisplay;">=</button>
+    <button class="button" onclick ="currentDisplay=eval( currentDisplay) + '=' ; document.querySelector('#display').value=currentDisplay;">=</button>
 
     <button class="button" onclick ="currentDisplay= currentDisplay + '9' ; document.querySelector('#display').value=currentDisplay;">9</button>
 
