@@ -38,7 +38,10 @@
 
     <button class="button" onclick ="currentDisplay= currentDisplay + '/' ; document.querySelector('#display').value=currentDisplay;">/</button>
 
-    <button class="button" onclick ="currentDisplay=eval( currentDisplay) + '=' ; document.querySelector('#display').value=currentDisplay;">=</button>
+    <button class="button"onclick="
+      currentDisplay = eval(currentDisplay);
+      document.querySelector('#display').value = currentDisplay;
+      ">=</button>
 
     <button class="button" onclick ="currentDisplay= currentDisplay + '9' ; document.querySelector('#display').value=currentDisplay;">9</button>
 
